@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/wrapper/header";
+import { BlobCursor } from "@/components/cursor/blob-cursor";
+import Footer from "@/components/pages/footer";
+import LoaderWrapper from "@/components/wrapper/loader-wrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,10 +28,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      <body 
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black min-h-screen relative`}
+        style={{ isolation: 'isolate' }} // Create new stacking context
       >
-        {children}
+        <LoaderWrapper>
+          <BlobCursor />
+          <div className="relative z-[1]">
+            <Header />
+            <main className="relative z-[1]">
+              {children}
+            </main>
+            <Footer />
+          </div>
+        </LoaderWrapper>
       </body>
     </html>
   );
