@@ -1,37 +1,137 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# OonkoO - Digital Excellence Platform
+
+![OonkoO Logo](public/oonkoo_logo.svg)
+
+OonkoO is a cutting-edge digital agency platform built with Next.js 14, React 19, TypeScript, and Tailwind CSS. We specialize in creating stunning digital experiences that captivate audiences and drive results.
+
+## Features
+
+- 🎨 Modern, responsive design with fluid animations
+- ⚡ High-performance React components
+- 🎯 Custom cursor interactions and hover effects
+- 🌓 Dynamic blur effects and gradient backgrounds
+- 🔄 Infinite sliders for showcasing content
+- 📱 Mobile-first approach with adaptive layouts
+- 🎭 Interactive loading animations
+- 🛠️ Modular component architecture
+
+## Tech Stack
+
+- **Framework:** Next.js 14
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **Icons:** Lucide Icons
+- **UI Components:** Radix UI + shadcn/ui
+- **Development:** Turbopack
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18.17 or later
+- pnpm (recommended) or npm
+
+### Installation
+
+1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/oonkoo.git
+cd oonkoo
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies
+```bash
+pnpm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Start the development server
+```bash
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser
 
-## Learn More
+### Build
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+pnpm build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+oonkoo/
+├── app/                   # App router configuration
+├── components/           # React components
+│   ├── cursor/          # Custom cursor components
+│   ├── pages/           # Page-specific components
+│   ├── ui/              # Reusable UI components
+│   └── wrapper/         # Layout wrapper components
+├── hooks/               # Custom React hooks
+├── lib/                 # Utility functions
+├── public/              # Static assets
+└── styles/              # Global styles
+```
 
-## Deploy on Vercel
+## Key Components
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **BlobCursor:** Custom cursor with interactive blob effect
+- **InfiniteSlider:** Smooth, endless content carousel
+- **HoverBorderGradient:** Animated gradient border effects
+- **Tilt:** 3D tilt animation component
+- **LoadingScreen:** Branded loading animation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# OonkoO
+## Features in Detail
+
+### Dynamic UI Elements
+- Custom animated cursor with context-aware interactions
+- Smooth scroll animations and parallax effects
+- Interactive hover states with gradients
+- Responsive card layouts with tilt effects
+
+### Performance Optimizations
+- Optimized image loading with Next.js Image component
+- Efficient animation handling with Framer Motion
+- Code splitting and lazy loading
+- Turbopack for fast development builds
+
+### Developer Experience
+- Type-safe development with TypeScript
+- Modular component architecture
+- Consistent code style with ESLint
+- Efficient styling with Tailwind CSS
+
+## Deployment
+
+The project is ready for deployment on platforms like Vercel, Netlify, or any other hosting service that supports Next.js.
+
+```bash
+pnpm build
+pnpm start
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contact
+
+- Website: [oonkoo.com](https://oonkoo.com)
+- Email: oonkoo.mail@gmail.com
+- Twitter: [@oonkoo](https://twitter.com/oonkoohq)
+- LinkedIn: [OonkoO Digital](https://linkedin.com/company/oonkoo)
+
+## Acknowledgments
+
+- Design inspiration from modern digital agencies
+- Open-source community and contributors
+- All our clients who trust in our digital excellence
